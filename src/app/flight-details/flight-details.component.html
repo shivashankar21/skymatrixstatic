@@ -1,0 +1,33 @@
+<div class="bgimg">
+    <div class="container">
+      <div class="flight-details">
+        <h2>Selected Flight Details</h2>
+        <p>Flight Number: <span id="flight-number">AI202</span></p>
+        <p>Departure: <span id="departure">New Delhi</span></p>
+        <p>Arrival: <span id="arrival">Mumbai</span></p>
+        <p>Date: <span id="date">2024-12-20</span></p>
+        <p>Time: <span id="time">10:00 AM</span></p>
+      </div>
+  
+      <div id="passenger-forms">
+        <div class="passenger-form">
+          <h2>Passenger Details</h2>
+          <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+            <label for="passport">Passport Number:</label><br>
+            <input type="text" id="passport" name="passport" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+          </form>
+        </div>
+      </div>
+  
+      <button (click)="addPassengerForm()">Add Another Passenger</button>
+      <br><br>
+      <button class="proceed-button">Proceed to Payment</button>
+    </div>
+  </div>
+  

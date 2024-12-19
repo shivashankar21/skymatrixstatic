@@ -1,0 +1,47 @@
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><a id="in"></a><img src="/images/flight.gif" alt="" width="100px" height="60px" style="border-radius: 10px;"></div>
+      <h1>SkyMatrix Airlines</h1>
+      <!-- <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul> -->
+      <div class="buttons">
+        <input type="button" (click)="user()" value="User">
+        <input type="button" (click)="admin()" value="Admin" >
+      </div>
+    </nav>
+    <div class="main-container">
+        <!-- From and To -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="from">From</label>
+            <input type="text" id="from" placeholder="Enter departure city">
+          </div>
+          <div class="form-group">
+            <label for="to">To</label>
+            <input type="text" id="to" placeholder="Enter destination city">
+          </div>
+        </div>
+        <!-- Departure and Return Dates -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="departure-date">Departure Date</label>
+            <input type="date" id="departure-date">
+          </div>
+          <div class="form-group">
+            <label for="return-date">Return Date</label>
+            <input type="date" id="return-date">
+          </div>
+        </div>
+        <!-- Submit Button -->
+        <div class="form-row">
+          <div class="form-group">
+            <button type="submit" class="submit-button">Search</button>
+          </div>
+        </div>
+    </div>
+  </header>
+</body>
